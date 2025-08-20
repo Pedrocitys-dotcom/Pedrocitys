@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kubíco - Plataforma Imobiliária</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8fafc;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80") no-repeat center/cover;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #1e40af;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      background: #e0f2fe;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: -30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kubíco</h1>
+    <p>Facilitando a compra e aluguer de imóveis em Angola</p>
+    <nav>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#kubico">Projeto Kubíco</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <h2>logim </h2>
+    <form> action="verifica-logi.php"method="POST">
+        <label>Usuário:</label><br>
+        <input type="text"name="Usuário"><br>
+        <label>Senha:</label><br>
+        <input type="text"name="Usuário"><br>
+        <label>Usuário:</label><br>
+        <input type="password"name="senha"><br>
+         <input type="submit"value="entrar"><br>
+    </form>
+   
+  </header>
+
+  <section class="highlight">
+    <h2>Bem-vindo à Kubíco</h2>
+    <p>Conectamos proprietários, inquilinos e corretores em uma plataforma única, prática e confiável.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+      A <strong>Kuassa Domingos – Comércio e Prestação de Serviços (SU) LDA</strong> 
+      é uma empresa angolana sediada em Viana. Nossa missão é fornecer soluções imobiliárias confiáveis, 
+      com foco em inovação, transparência e parceria.
+    </p>
+    <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1200&q=80" 
+         alt="Prédios modernos" style="width:100%; border-radius:10px; margin-top:20px;">
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560184897-ae75f4184934?auto=format&fit=crop&w=1200&q=80" alt="Venda de imóveis">
+        <div style="padding: 15px;">
+          <h3>Venda de Imóveis</h3>
+          <p>Casas, terrenos, armazéns e muito mais.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80" alt="Aluguer de imóveis">
+        <div style="padding: 15px;">
+          <h3>Aluguer de Imóveis</h3>
+          <p>Apartamentos, quartos e armazéns em várias localizações.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Novos serviços">
+        <div style="padding: 15px;">
+          <h3>Futuros Serviços</h3>
+          <p>Novas soluções em breve para facilitar ainda mais a sua vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kubico">
+    <h2>O Projeto Kubíco</h2>
+    <p>
+      O aplicativo <strong>Kubíco</strong> conecta pessoas que procuram imóveis com 
+      proprietários e corretores, mediando negociações de forma segura e prática.
+      Com filtros de busca por localização e tipo de imóvel, a plataforma simplifica 
+      a procura e aproxima todas as partes envolvidas.
+    </p>
+    <img src="https://images.unsplash.com/photo-1600585152744-3d4a9c3eafc8?auto=format&fit=crop&w=1200&q=80" 
+         alt="Aplicativo imobiliário" style="width:100%; border-radius:10px; margin-top:20px;">
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@kubico.co.ao</p>
+    <p>WhatsApp: +244 999 999 999</p>
+    <p>Endereço: Viana, Luanda - Angola</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kubíco - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
